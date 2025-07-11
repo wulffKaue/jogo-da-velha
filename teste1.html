@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./teste1.css" />
+  </head>
+  <body>
+    <div id="panel-musics">
+      <img onclick="openPanel()" class="menu-icon" src="./menu.png" alt="" />
+      <div id="panel">
+        <h1 class="musicword">other songs</h1>
+        <hr />
+        <div class="music1">
+          <img class="img-music1" src="./img.daydream.jpg" alt="" />
+          <a class="link-music1" href="http://127.0.0.1:5500/teste2.html"
+            >Daydream In Blue</a
+          >
+        </div>
+        <img onclick="closePanel()" class="back-button" src="./left-arrow.png" alt="" />
+      </div>
+    </div>
+    <nav id="nav">
+      <marquee behavior="" direction="right"
+        >The Rolling Stones - Paint It, Black</marquee
+      >
+    </nav>
+    <div id="container-msc" class="container">
+      <div id="sound1" class="sound">
+        <img src="./paint in black imagem.jpg" alt="" />
+        <audio id="audio">
+          <source src="./the rolling stones.mp3" />
+        </audio>
+        <div id="controls1" class="controls">
+          <img onclick="play()" class="btn" src="./play-button.png" />
+          <img onclick="pause()" class="btn" src="./stop-button.png" />
+          <img onclick="decreasevel()" class="btn" src="./minus.png" />
+          <img onclick="increasevel()" class="btn" src="./button.png" />
+          <img onclick="back()" class="btn" src="./ten.png" />
+          <img onclick="advance()" class="btn" src="./ten (1).png" />
+        </div>
+      </div>
+    </div>
+
+    <div id="speed-music">
+      <h1 id="number-speed">1.0X</h1>
+    </div>
+    <script src="./script1.js"></script>
+  </body>
+</html>
