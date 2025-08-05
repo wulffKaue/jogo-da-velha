@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jogo da velha</title>
+    <link rel="stylesheet" href="./JV.css" />
+  </head>
+  <body>
+    <h1>Força & Glória</h1>
+
+    <div class="stage">
+      <div>
+        <div id="0" class="square"><div class=""></div></div>
+        <div id="1" class="square"><div class=""></div></div>
+        <div id="2" class="square"></div>
+      </div>
+
+      <div>
+        <div id="3" class="square"></div>
+        <div id="4" class="square"></div>
+        <div id="5" class="square"></div>
+      </div>
+
+      <div>
+        <div id="6" class="square"></div>
+        <div id="7" class="square"></div>
+        <div id="8" class="square"></div>
+      </div>
+    </div>
+
+    <div class="reset">
+       <div class="button-reset"><img id="resetGame"  class="img-reset" src="./imagens/reiniciar.png" alt=""></div>
+    </div>   
+
+    <div id="messagewinner" class="messagewin"><div class="message"><h1>O jogador  ganhou</h1></div></div>
+  
+  </body>
+  <script src="./scripts/JVLOGIC.js"></script>
+  <script src="./scripts/JVINTEFACE.js"></script>
+</html>
