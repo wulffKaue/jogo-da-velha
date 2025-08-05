@@ -10,6 +10,7 @@ let panelmsc = document.getElementById("panel-musics");
 
 
 
+
 function closePanel() {
   panel.style.visibility = "hidden";
 }

@@ -2,19 +2,24 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(56, 56, 56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 .container {
-  border-radius: 50px;
-  border: solid black 1px;
-  border: none;
-  margin: 0;
-  text-align: center;
-  max-width: 400px;
-  height: 400px;
   position: relative;
-  bottom: 525px;
-  left: 420px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 400px;
+  height: 400px;
+  margin: 0;
+  border-radius: 50px;
   background-color: rgb(53, 48, 48);
   overflow: hidden;
   z-index: 0;
@@ -27,9 +32,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("./paint\ in\ black\ imagem.jpg");
+  border-radius: 50px;
+  background-image: url("./icons/paint\ in\ black\ imagem.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   filter: blur(10px) brightness(80%);
   z-index: -1;
 }
@@ -38,32 +44,33 @@ body {
   box-shadow: 0 0 10px 5px rgb(33, 33, 33);
 }
 
-.sound {
-  position: relative;
-  top: 50px;
-}
-
 .controls {
-  max-width: 310px;
   display: flex;
   border: solid rgb(0, 0, 0) 5px;
   border-radius: 30px;
   gap: 10px;
-  justify-content: center;
-  position: relative;
-  top: 40px;
   padding: 10px;
-  left: 30px;
 }
 
 nav {
-  margin: 0;
-  position: absolute;
-  left: 450px;
-  top: 68px;
+  width: 100%;
+  text-align: center;
   color: aliceblue;
   font-size: 20px;
-  visibility: hidden;
+  visibility: visible;
+  width: 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+nav marquee {
+    display: inline-block;
+  width: 100%;
+  color: aliceblue;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .speed {
@@ -130,6 +137,11 @@ img {
 #panel-musics {
   margin: 0;
   padding: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 10px;
 }
 
 .musicword {
@@ -184,3 +196,11 @@ hr {
   transform: translateX(-10px);
   transition: 0.2s;
 }
+
+.sound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5vh;
+}
+
