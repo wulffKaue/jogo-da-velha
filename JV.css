@@ -1,8 +1,24 @@
 body {
   text-align: center;
-  background-color: #312f2f;
   margin: 0;
   padding: 0;
+ 
+  background: linear-gradient(135deg, #0a0a0a, #1f1f1f, #330047, #1f1f1f, #0d0d0d);
+  background-size:400% 400% ;
+  animation: backgroundAnimate 15s ease-in-out infinite alternate;
+  min-height: 100vh;
+}
+
+@keyframes backgroundAnimate {
+   0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 h1 {
@@ -50,7 +66,7 @@ h1 {
   position: absolute;
   content: "\2694";
   font-size: 3.5rem;
-  line-height:200%;
+  line-height: 200%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -71,20 +87,20 @@ h1 {
 }
 
 .reset:hover {
-    padding: 0.7rem;
+  padding: 0.7rem;
 }
 
 .messagewin {
-   position: absolute;
-   top: 40%;
-   right: 41%;
-   background-color: #5f5f5f;
-   border: 2px solid black;
-   border-radius: 15px;
-   visibility: hidden;
-   width: 20%;
-   height: 10%;
-   font-size: 170%;
-   font-family: Arial, Helvetica, sans-serif;
-   color: antiquewhite;
+  position: absolute;
+  top: 40%;
+  right: 41%;
+  background-color: #5f5f5f;
+  border: 2px solid black;
+  border-radius: 15px;
+  visibility: hidden;
+  width: 20%;
+  height: 10%;
+  font-size: 170%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: antiquewhite;
 }
