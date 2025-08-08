@@ -79,9 +79,9 @@ h1 {
 
 .o:after {
   position: absolute;
-  content: "\26E8";
+  content: "\2B55";
   font-size: 3.5rem;
-  line-height: 200%;
+  line-height: 180%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -94,9 +94,9 @@ h1 {
 
 .x:after {
   position: absolute;
-  content: "\2694";
-  font-size: 3.5rem;
-  line-height: 200%;
+  content: "\2716";
+  font-size: 4.5rem;
+  line-height: 140%;
   top: 0;
   bottom: 0;
   left: 0;
@@ -195,7 +195,6 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 12px;
-  float: right;
   font-size: 18px;
   color: rgb(4, 19, 151);
   font-family: Arial, Helvetica, sans-serif;
@@ -275,6 +274,17 @@ h1 {
     bottom: 20px;
     font-size: 14px;
     flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 1920px) {
+  .reset-notice {
+    left: 53%;
+    transform: translateX(-50%);
+    bottom: 10px;
+    font-size: 14px;
     gap: 6px;
     text-align: center;
   }
