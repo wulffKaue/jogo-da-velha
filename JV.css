@@ -58,7 +58,7 @@ h1 {
 
 .square:hover {
   padding: 1.5%;
-  box-shadow: 3px 3px 20px rgb(126, 255, 100);
+  box-shadow: 3px 3px 20px rgb(216, 205, 205);
 }
 
 @keyframes backgroundSquare {
@@ -104,7 +104,7 @@ h1 {
 }
 
 .reset {
-  transition-property: background-color, padding;
+  transition-property: background-color, padding, box-shadow;
   transition-duration: 500ms;
   animation: animationReset 10s infinite 100ms backwards;
   border: 1px solid rgb(0, 0, 0);
@@ -116,6 +116,7 @@ h1 {
 }
 
 .reset:hover {
+  box-shadow: 5px 5px 30px 6px rgb(14, 31, 68);
   background-color: rgb(41, 36, 119);
   padding: 0.5rem;
   border-radius: 10%;
@@ -133,7 +134,7 @@ h1 {
   position: absolute;
   top: 40%;
   right: 41%;
-  background-color: #5f5f5f;
+  background-color: #3a3a3a;
   border: 2px solid black;
   border-radius: 15px;
   visibility: hidden;
@@ -178,4 +179,22 @@ h1 {
   100% {
     transform: translateY(-20px);
   }
+}
+
+.reset-notice {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  position: relative;
+  right: 520px;
+  top: 30px;
+  float: right;
+  font-size: 18px;
+  color: rgb(24, 33, 119);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-notice {
+  width: 9%;
 }
