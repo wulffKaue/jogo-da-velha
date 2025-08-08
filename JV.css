@@ -181,19 +181,25 @@ h1 {
   }
 }
 
+.container-notice {
+  position: relative;
+}
+
 .reset-notice {
+  position:absolute;
+  left: 770px;
+  bottom: 7px;
+  margin: 0;
   animation: animationNotice 10s infinite 100ms backwards;
   align-items: center;
   display: flex;
   justify-content: center;
   gap: 12px;
-  position: relative;
-  right: 500px;
-  top: 2.1rem;
   float: right;
   font-size: 18px;
   color: rgb(4, 19, 151);
   font-family: Arial, Helvetica, sans-serif;
+ 
 }
 
 @keyframes animationNotice {
@@ -235,3 +241,51 @@ h1 {
 .img-notice {
   width: 9%;
 }
+
+.bnt-disppear{
+  border: solid black 1px;
+  margin: 0;
+}
+
+
+/* Telas médias (notebooks/tablets de 1024px a 1399px) */
+@media (max-width: 1399px) {
+  .reset-notice {
+    left: 600px;
+    font-size: 17px;
+    gap: 10px;
+  }
+}
+
+/* Telas pequenas (tablets e celulares em modo paisagem, até 1023px) */
+@media (max-width: 1023px) {
+  .reset-notice {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 16px;
+    gap: 8px;
+  }
+}
+
+/* Celulares em pé (até 600px) */
+@media (max-width: 600px) {
+  .reset-notice {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    font-size: 14px;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+

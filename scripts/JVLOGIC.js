@@ -75,7 +75,7 @@ function noticeDisappear() {
  
   let timeID = setTimeout (() => {
     notice.style.display = "none";
-  }, 10000);
+  }, 5000);
 }
 
 noticeDisappear()
