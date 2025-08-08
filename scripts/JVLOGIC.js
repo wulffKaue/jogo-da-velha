@@ -69,3 +69,13 @@ resetButton.addEventListener("click", function () {
   message.innerHTML = "";
   message.style.visibility = "hidden";
 });
+
+function noticeDisappear() {
+  let notice = document.getElementById("notice");
+ 
+  let timeID = setTimeout (() => {
+    notice.style.display = "none";
+  }, 10000);
+}
+
+noticeDisappear()
