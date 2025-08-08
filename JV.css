@@ -102,22 +102,29 @@ h1 {
 }
 
 .reset {
-  animation: ;
+  transition-property: background-color , padding;
+  transition-duration: 500ms;
+  animation: animationReset 10s infinite 100ms backwards;
   border: 1px solid rgb(0, 0, 0);
   display: inline-block;
-  border-radius: 50%;
+  border-radius: 25%;
   background-color: #a7a0a0;
-  padding: 0.5rem;
+  padding: 0.3rem;
   margin-top: 2%;
+}
+
+.reset:hover {
+  background-color:rgb(51, 47, 102);
+  padding: 0.5rem;
+  border-radius: 10%;
+  padding-left: 1rem;
+  padding-right:1rem ;
 }
 
 .img-reset {
   width: 1.5rem;
 }
 
-.reset:hover {
-  padding: 0.7rem;
-}
 
 .messagewin {
   position: relative;
