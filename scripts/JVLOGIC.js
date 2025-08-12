@@ -59,6 +59,8 @@ resetButton.addEventListener("click", function () {
   board = ["", "", "", "", "", "", "", "", ""];
   playerTime = 0;
 
+  soundReset();
+
   //  limpa o tabuleiro visualmente
 
   let squares = document.querySelectorAll(".square");
@@ -72,10 +74,10 @@ resetButton.addEventListener("click", function () {
 
 function noticeDisappear() {
   let notice = document.getElementById("notice");
- 
-  let timeID = setTimeout (() => {
+
+  let timeID = setTimeout(() => {
     notice.style.display = "none";
   }, 5000);
 }
 
-noticeDisappear()
+noticeDisappear();

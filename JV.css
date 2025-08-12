@@ -133,7 +133,7 @@ h1 {
   animation: animationWin 10s infinite 100ms backwards;
   position: absolute;
   top: 40%;
-  right: 41%;
+  right: 39.5%;
   background-color: #3a3a3a;
   border: 2px solid black;
   border-radius: 15px;
@@ -186,7 +186,7 @@ h1 {
 }
 
 .reset-notice {
-  position:absolute;
+  position: absolute;
   left: 770px;
   bottom: 7px;
   margin: 0;
@@ -198,11 +198,10 @@ h1 {
   font-size: 18px;
   color: rgb(4, 19, 151);
   font-family: Arial, Helvetica, sans-serif;
- 
 }
 
 @keyframes animationNotice {
-    0% {
+  0% {
     transform: translateX(-20px);
   }
   10% {
@@ -241,11 +240,10 @@ h1 {
   width: 9%;
 }
 
-.bnt-disppear{
+.bnt-disppear {
   border: solid black 1px;
   margin: 0;
 }
-
 
 /* Telas médias (notebooks/tablets de 1024px a 1399px) */
 @media (max-width: 1399px) {
@@ -289,13 +287,3 @@ h1 {
     text-align: center;
   }
 }
-
-
-
-
-
-
-
-
-
-
